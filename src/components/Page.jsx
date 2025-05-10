@@ -56,7 +56,8 @@ const Page = () => {
               animate={{ opacity: 1, x: 0 }}
               className="flex items-center gap-2"
             >
-              <Paw className="h-6 w-6 text-amber-300" />
+              {/* <Paw className="h-6 w-6 text-amber-300" /> */}
+              <img  src='/beagleLogo.png' className='h-13 w-11 py-0'/>
               <span className="text-xl font-bold">Beagle</span>
             </motion.div>
 
@@ -503,18 +504,21 @@ const Page = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-amber-900 text-amber-200 py-8">
+      <footer className="bg-amber-900 text-amber-200 py-4">
         <div className="container mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="flex justify-center items-center gap-2 mb-4"
+            className="flex justify-center items-center gap-2 mb-2"
           >
             <Paw className="h-6 w-6 text-amber-400" />
             <span className="text-xl font-bold">Beagle</span>
           </motion.div>
-          <p className="mb-4">© {new Date().getFullYear()} Beagle's Website. All rights reserved.</p>
+          <p className="text-[12px] py-2 amber-900">
+                    Made with 💛 & passion by <a href="https://x.com/" className="text-yellow-500 hover:underline">BeagleTeam</a> 
+                    </p>
+          {/* <p className="mb-2">© {new Date().getFullYear()} Beagle's Website. All rights reserved.</p> */}
           <div className="flex justify-center gap-4">
             <a href="#" className="hover:text-amber-400 transition-colors">
               Privacy Policy
